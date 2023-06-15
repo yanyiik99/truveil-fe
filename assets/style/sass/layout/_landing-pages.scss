@@ -1,0 +1,44 @@
+/*----------------------------------------------------------
+    File Name  : _landing-pages.scss
+    Desc       : File ini merupakan styling untuk Landing Page
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Banner Landing Page
+ * 2. Filter Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Banner Landing Page Start
+------------------------------------------------------------*/ 
+
+.u-truveil-banner {
+    color: var.$bg-primary-truveil;
+}
+ 
+/*----------------------------------------------------------
+1. Banner Landing Page End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+2. Filter Page Start
+------------------------------------------------------------*/ 
+.filter-landing {
+    .container {
+        border-radius: 14px;
+        border: 4px solid var.$text-primary-darken-truveil;
+    } 
+}
+
+/*----------------------------------------------------------
+2. Filter Page End
+------------------------------------------------------------*/ 

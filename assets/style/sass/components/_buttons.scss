@@ -1,0 +1,39 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk 
+                 Component Button yang akan dipakai berulang
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Buttons Landing
+ *
+ */
+
+ @use '../abstracts/variables' as var;
+
+
+ /*----------------------------------------------------------
+1. Buttons Landing Start 
+------------------------------------------------------------*/ 
+.btn-contact-us {
+    background-color: var.$bg-primary-truveil;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 999999px;
+
+    &:hover {
+        background-color: var.$bg-primary-truveil;
+        color: #ffffff;
+    }
+}
+
+ /*----------------------------------------------------------
+1. Buttons Landing End 
+------------------------------------------------------------*/ 
+
+
+
+
