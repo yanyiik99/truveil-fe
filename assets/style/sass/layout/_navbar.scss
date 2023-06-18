@@ -1,0 +1,28 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk Navbar
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Navbar Landing Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Navbar Landing Page Start
+------------------------------------------------------------*/ 
+
+.bg-navbar {
+    background: linear-gradient(269.92deg, #387294 -0.61%, #034A73 188.24%);
+}
+ 
+/*----------------------------------------------------------
+1. Navbar Landing Page End
+------------------------------------------------------------*/ 

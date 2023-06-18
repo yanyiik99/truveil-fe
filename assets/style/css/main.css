@@ -12720,7 +12720,8 @@ p {
  * TABLE OF CONTENTS
  *
  * 1. Banner Landing Page
- * 2. Filter Page
+ * 2. Filter Landing Page
+ * 3. Preview Card Landing Page
  *
  */
 /*----------------------------------------------------------
@@ -12734,7 +12735,7 @@ p {
 1. Banner Landing Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
-2. Filter Page Start
+2. Filter Landing Page Start
 ------------------------------------------------------------*/
 .filter-landing .container {
   border-radius: 14px;
@@ -12742,7 +12743,57 @@ p {
 }
 
 /*----------------------------------------------------------
-2. Filter Page End
+2. Filter Landing Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+3. Preview Card Landing Page Start
+------------------------------------------------------------*/
+.gradient-preview-card {
+  width: max-content;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, rgb(185, 229, 255) 50%, rgb(185, 229, 255) 100%);
+}
+
+.card-preview .item {
+  height: 730px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+.card-preview .item .head-card-preview .time-card-preview {
+  font-size: 12px;
+}
+.card-preview .item .img-card-preview img {
+  height: 320px;
+  display: block;
+  object-fit: cover;
+}
+.card-preview .item .body-card-preview .location-card-preview {
+  font-size: 13px;
+}
+
+/*----------------------------------------------------------
+3. Preview Card Landing Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk Navbar
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Navbar Landing Page
+ *
+ */
+/*----------------------------------------------------------
+1. Navbar Landing Page Start
+------------------------------------------------------------*/
+.bg-navbar {
+  background: linear-gradient(269.92deg, #387294 -0.61%, #034A73 188.24%);
+}
+
+/*----------------------------------------------------------
+1. Navbar Landing Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _navbar.scss
@@ -12768,6 +12819,35 @@ p {
 .btn-contact-us:hover {
   background-color: #01507D;
   color: #ffffff;
+}
+
+.btn-navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-order-card-preview {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 99999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.btn-detail-card-preview {
+  background-color: #01507D;
+  color: #ffffff;
+  border-radius: 99999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+.btn-detail-card-preview:hover {
+  background-color: #01507D;
+  color: #dddddd;
 }
 
 /*----------------------------------------------------------

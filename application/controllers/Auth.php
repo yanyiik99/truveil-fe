@@ -25,10 +25,16 @@ class Auth extends CI_Controller
 		// print_r($_SESSION);
 		// die;
 
+		// Untuk Cut Description
+		$x = "A cozy 2 bedroom villa in a peaceful area of Tumbak Bayuh is available for both monthly and yearly rental. Boasts 2 en-suite bedrooms, an open living space, an equipped . . . . Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, asperiores.";
+		$desc = mb_strimwidth($x , 0, 170, " . . . .");
+
 		$data	= array(
             'title'		 	=> NAMETITLE . ' - Homepage',
             'content'	 	=> 'auth/index',
-			'extra'		    => 'auth/js/js_index'
+			'navbar'		=> 'auth/tamplate/navbar',
+			'extra'		    => 'auth/js/js_index',
+			'desc'			=> $desc
 		);
 
 		$this->load->view('auth/tamplate/wrapper', $data);

@@ -8,15 +8,28 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+
+
+<!-- AUTO NUMERIC -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/1.8.2/autoNumeric.js"></script>
 
 <?php
 if (isset($extra)) {
     $this->load->view($extra);
 }
 ?>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVEK6294YT"></script>
+
+<script>
+    $(".money-input").autoNumeric('init', {
+        aSep: ',',
+        aDec: '.',
+        aForm: true,
+        vMax: '99999999999.99',
+        vMin: '0.00'
+    });
+</script>
 
 </body>
 
