@@ -1,35 +1,4 @@
 
-<nav class="navbar navbar-light bg-light">
-    <div class="container my-3">
-        <div>
-            <div class="dropdown">
-                <button class="btn btn-secondary" style="border-radius: 1000px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Language
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <div class="dropdown">
-                <button class="btn btn-secondary" style="border-radius: 1000px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Currency
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-
-
-
 <!-- START MAIN CONTENT -->
 <main>
     <!-- Start Banner -->
@@ -64,27 +33,28 @@
     </section>
     <!-- End Banner -->
 
+    <!-- Start Filter Landing -->
     <section id="filter-landing" class="filter-landing my-5 pt-5">
         <div class="container p-5">
             <h4 class="fw-semibold text-primary-darken-truveil">Search your property</h4>
             <div class="row pt-5">
-                <div class="col-5">
+                <div class="col-12 col-lg-5 pt-4 pt-lg-0">
                     <div class="truveil-input">
                         <input type="email" placeholder="Property Name / ID " id="email" autocomplete="off">
                         <label for="email">Property Name / ID </label>
                     </div>
                 </div>
-                <div class="col-4">
-                    <select class="form-select select-truveil" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
+                <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+                    <select class="form-select select-truveil " aria-label="Default select example">
+                        <option selected disabled>Rent Type</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3 pt-4 pt-lg-0">
                     <select class="form-select select-truveil" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
+                        <option selected disabled>Location</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
@@ -92,37 +62,343 @@
                 </div>
             </div>
             <div class="row pt-5">
-                <div class="col-5">
+                <div class="col-12 col-lg-5 pt-4 pt-lg-0">
                     <div class="truveil-input">
-                        <input type="email" placeholder="Property Name / ID " id="email" autocomplete="off">
-                        <label for="email">Property Name / ID </label>
+                        <input type="text" placeholder="Price" id="price" class="money-input" autocomplete="off">
+                        <label for="price">Price</label>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 pt-4 pt-lg-0">
                     <select class="form-select select-truveil" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
+                        <option selected disabled>Select Bedroom</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3 pt-4 pt-lg-0">
                     <select class="form-select select-truveil" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
+                        <option selected disabled>Other Filter</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
             </div>
-            <button>
+            <button class="btn btn-contact-us mt-5">
                 Search
+                <i class="fa-solid fa-magnifying-glass ms-2"></i>
             </button>
         </div>
     </section>
+    <!-- End Filter Landing -->
+
+    <!-- Start Preview Card -->
+    <section id="preview-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="gradient-preview-card fw-bold d-flex">Yearly & Monthly</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme card-preview">
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-1.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-demo.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-3.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 pt-5"></div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h3 class="gradient-preview-card fw-bold d-flex">Leasehold & Freehold</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme card-preview">
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-1.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-demo.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item m-3">
+                        <div class="head-card-preview">
+                            <div class="d-flex justify-content-between p-2">
+                                <span class="fw-bold">
+                                    #ID 001
+                                </span>
+                                <span class="time-card-preview">
+                                    <i class="fa-regular fa-clock"></i>
+                                    Update 25 March 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img-card-preview">
+                            <img src="<?= base_url()?>assets/img/villa/v-3.png" alt="img">
+                        </div>
+                        <div class="p-4 body-card-preview">
+                            <h4 class="fw-bold">Villa Anonymous</h4>
+                            <span class="location-card-preview pb-3 d-block">
+                                <i class="fa-solid fa-location-dot"></i> 
+                                Canggu, Bali
+                            </span>
+                            <a href="" class="btn btn-order-card-preview px-3">
+                                <img class="img-fluid w-auto pe-3" src="<?= base_url()?>assets/img/wa-logo-order.png" alt="logo-order">
+                                <span>
+                                    Order Now
+                                </span>
+                            </a>
+                            <span class="d-block pt-3">
+                                <?= $desc?>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <span>
+                                    <i class="fa-regular fa-heart fs-4"></i>
+                                </span>
+                                <a href="" class="btn btn-detail-card-preview">
+                                    See Detail
+                                    <i class="fa-solid fa-arrow-right ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Preview Card -->
 
 </main>
 <!-- END MAIN CONTENT -->
+
+<footer id="footer" class="footer py-5">
+    <div class="container">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-4">
+                LOGO
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <div class="">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li>WA</li>
+                        <li>IG</li>
+                        <li>EMAIL </li>
+                        <li>JAMKERJA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <div >
+                    <h5>Features</h5>
+                    <ul>
+                        <li>Monthly</li>
+                        <li>Yearly</li>
+                        <li>Freehold</li>
+                        <li>Leasehold</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <?php if (@isset($_SESSION["success"])) { ?>
