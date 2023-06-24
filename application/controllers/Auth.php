@@ -85,8 +85,8 @@ class Auth extends CI_Controller
 		
 
 		if(isset($result->accessToken)){
-			$this->session->set_userdata($mdata);
-			redirect("/");
+			$this->session->set_userdata($result->accessToken);
+			redirect("/admin/dashboard");
 		}else{
 			$this->session->set_flashdata('failed', $result->message);
 			redirect("/auth/login");

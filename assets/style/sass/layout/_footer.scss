@@ -1,0 +1,33 @@
+/*----------------------------------------------------------
+    File Name  : _footer.scss
+    Desc       : File ini merupakan styling untuk Footer
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Footer Landing Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Footer Page Start
+------------------------------------------------------------*/ 
+
+.bg-footer {
+    background-color: var.$text-primary-darken-truveil;
+    color: #ffffff;
+}
+
+.bg-footer a {
+    color: #ffffff;
+}
+
+/*----------------------------------------------------------
+1. Footer Page End
+------------------------------------------------------------*/ 

@@ -12796,6 +12796,32 @@ p {
 1. Navbar Landing Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
+    File Name  : _footer.scss
+    Desc       : File ini merupakan styling untuk Footer
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Footer Landing Page
+ *
+ */
+/*----------------------------------------------------------
+1. Footer Page Start
+------------------------------------------------------------*/
+.bg-footer {
+  background-color: #4C748B;
+  color: #ffffff;
+}
+
+.bg-footer a {
+  color: #ffffff;
+}
+
+/*----------------------------------------------------------
+1. Footer Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
     File Name  : _navbar.scss
     Desc       : File ini merupakan styling untuk 
                  Component Button yang akan dipakai berulang
@@ -12929,11 +12955,6 @@ p {
   position: relative;
   width: 100%;
 }
-
-.truveil-input input::placeholder {
-  opacity: 0;
-}
-
 .truveil-input input {
   width: 100%;
   height: 60px;
@@ -12944,7 +12965,19 @@ p {
   box-sizing: border-box;
   border-radius: 5px;
 }
-
+.truveil-input input::placeholder {
+  opacity: 0;
+}
+.truveil-input input:focus + label, .truveil-input input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 0.6rem;
+  color: #000000;
+  background: #ffffff;
+  padding: 7px;
+}
+.truveil-input input :focus {
+  border: 2px solid #000000;
+}
 .truveil-input label {
   position: absolute;
   left: 20px;
@@ -12956,19 +12989,6 @@ p {
   transition: 0.3s;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-}
-
-.truveil-input input:focus + label,
-.truveil-input input:not(:placeholder-shown) + label {
-  top: 0;
-  font-size: 0.6rem;
-  color: #000000;
-  background: #ffffff;
-  padding: 7px;
-}
-
-.truveil-input input:focus {
-  border: 2px solid #000000;
 }
 
 .form-select.select-truveil {

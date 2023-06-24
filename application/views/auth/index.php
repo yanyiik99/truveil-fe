@@ -368,33 +368,71 @@
 </main>
 <!-- END MAIN CONTENT -->
 
-<footer id="footer" class="footer py-5">
+<footer id="footer" class="footer bg-footer py-5 mt-5">
     <div class="container">
         <div class="row d-flex justify-content-evenly">
             <div class="col-4">
-                LOGO
+                <div>
+                    <img src="<?= base_url()?>assets/img/logo.png" alt="logo" width="80" height="80">
+                </div>
+                <div class="pt-3">
+                    <a href="" class="fs-4">
+                        <i class="fas fa-phone"></i>
+                        +62 81213123123
+                    </a>
+                </div>
             </div>
             <div class="col-4 d-flex justify-content-end">
                 <div class="">
-                    <h5>Contact Us</h5>
+                    <h5 class="fw-bold">Contact Us</h5>
                     <ul>
-                        <li>WA</li>
-                        <li>IG</li>
-                        <li>EMAIL </li>
-                        <li>JAMKERJA</li>
+                        <li class="pt-3">
+                            <a href="">
+                                <i class="fab fa-whatsapp"></i>
+                                +62 81213123123
+                            </a>
+                        </li>
+                        <li class="pt-3">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                                @truveil.co
+                            </a>
+                        </li>
+                        <li class="pt-3">
+                            <a href="">
+                                <i class="far fa-envelope"></i>
+                                truevil@gmail.com
+                            </a>
+                        </li>
+                        <li class="pt-3">
+                            <a href="">
+                                <i class="far fa-clock"></i>
+                                24 hours
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-4 d-flex justify-content-end">
                 <div >
-                    <h5>Features</h5>
+                    <h5 class="fw-bold">Features</h5>
                     <ul>
-                        <li>Monthly</li>
-                        <li>Yearly</li>
-                        <li>Freehold</li>
-                        <li>Leasehold</li>
+                        <li class="pt-3">Monthly</li>
+                        <li class="pt-3">Yearly</li>
+                        <li class="pt-3">Freehold</li>
+                        <li class="pt-3">Leasehold</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+            </div>
+            <div class="col-12">
+                <a href="">
+                    @Copyright 2023 Truveil
+                </a>
             </div>
         </div>
     </div>
