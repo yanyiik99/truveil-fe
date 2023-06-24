@@ -1,5 +1,5 @@
 
-    </div>
+</div>
 <!--end::Wrapper Content & Sidebar-->
 
     </div>

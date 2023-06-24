@@ -10,8 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Favicons -->
-		<link href="<?= base_url() ?>assets/img/favicon.png" rel="icon">
-		<link href="<?= base_url() ?>assets/img/favicon.png" rel="apple-touch-icon">
+		<link href="<?= base_url() ?>assets/img/logo.png" rel="icon">
+		<link href="<?= base_url() ?>assets/img/logo.png" rel="apple-touch-icon">
 
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
@@ -20,6 +20,8 @@
 		<!--begin::Vendor Stylesheets(used for this page only)-->
 		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 		<!--end::Vendor Stylesheets-->
 
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
